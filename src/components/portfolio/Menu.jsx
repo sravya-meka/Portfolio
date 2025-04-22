@@ -1,40 +1,19 @@
-import Work1 from "../../assets/native-jobs.png";
-import Work2 from "../../assets/cryptoverse.png";
-import Work3 from "../../assets/travel.png";
-import Work4 from "../../assets/blog-1.svg";
-
 const Menu = [
 	{
-		id: 1,
-		image: Work1,
-		title: "React Native Jobs App",
-		category: ["Frontend", "React"],
-		repositoryUrl: "https://github.com/GregSithole/react-native-jobs"
+	  id: 1,
+	  title: "End-to-End ETL Data Pipeline for Financial Analytics",
+	  description:
+		"Constructed a fully scalable ETL pipeline using Python, Spark, and Databricks to handle over 500GB+ of financial data. Integrated it with AWS Redshift for real-time analytics and set up Apache Airflow to manage and monitor workflows with 99.9% uptime.",
+	  tech: ["Python", "Spark", "Databricks", "AWS"],
 	},
 	{
-		id: 2,
-		image: Work2,
-		title: "Cryptoverse",
-		category: ["Frontend", "React"],
-		url: "https://cryptoverse.gregsithole.com",
-		repositoryUrl: "https://github.com/GregSithole/crypto-app"
+	  id: 2,
+	  title: "Data Pipeline for Real-Time Analytics",
+	  description:
+		"Created a real-time streaming pipeline using Apache Kafka, Spark, and AWS Kinesis to process millions of live transactions. Enriched the data in BigQuery and built Power BI dashboards, reducing data delivery latency by 4%.",
+	  tech: ["Kafka", "BigQuery", "AWS", "Airflow", "Power BI"],
 	},
-	{
-		id: 3,
-		image: Work3,
-		title: "Travel Advisor",
-		category: ["Frontend"],
-		url: "https://travel.gregsithole.com",
-		repositoryUrl: "https://github.com/GregSithole/travel-advisor"
-	},
-	{
-		id: 4,
-		image: Work4,
-		title: "Wallhaven CLI",
-		category: ["Backend"],
-		url: "https://www.npmjs.com/package/wallhaven-cli",
-		repositoryUrl: "https://github.com/GregSithole/wallhaven-cli"
-	}
-];
-
-export default Menu;
+  ];
+  
+  export default Menu;
+  

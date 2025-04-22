@@ -1,6 +1,8 @@
 .services__container {
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 1.875rem;
+  justify-content: center;
 }
 
 .services__card {
@@ -15,23 +17,37 @@
   transform: translateY(-10px);
 }
 
+/* Colored backgrounds + shadows */
 .services__card:nth-child(1) {
   background-color: rgb(108, 108, 229);
-  box-shadow: 0 5px 20px 0 rgb(108, 108, 229 / 50%);
+  box-shadow: 0 5px 20px 0 rgba(108, 108, 229, 0.5);
+}
+
+.services__card:nth-child(1) .services__img {
+  width: 180px;
+  height: 90px;
 }
 
 .services__card:nth-child(2) {
   background-color: rgb(249, 215, 76);
-  box-shadow: 0 5px 20px 0 rgb(249, 215, 76 / 50%);
+  box-shadow: 0 5px 20px 0 rgba(249, 215, 76, 0.5);
 }
 
 .services__card:nth-child(3) {
   background-color: rgb(249, 123, 139);
-  box-shadow: 0 5px 20px 0 rgb(249, 123, 139 / 50%);
+  box-shadow: 0 5px 20px 0 rgba(249, 123, 139, 0.5);
+}
+
+.services__card:nth-child(4) {
+  background-color: rgb(88, 188, 116);
+  box-shadow: 0 5px 20px 0 rgba(88, 188, 116, 0.5);
 }
 
 .services__img {
   margin-bottom: 1.25rem;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .services__title {
@@ -44,37 +60,3 @@
   color: #f8f9fa;
 }
 
-.services__card:nth-child(2) .services__title {
-  color: var(--title-color);
-}
-
-.services__card:nth-child(2) .services__description {
-  color: var(--title-color);
-}
-
-[data-theme="dark"] .services__card:nth-child(2) .services__title,
-[data-theme="dark"] .services__card:nth-child(2) .services__description {
-  color: var(--body-color);
-}
-
-@media screen and (max-width: 1024px) {
-  .services__container {
-    grid-template-columns: repeat(2, 330px);
-    justify-content: center;
-    row-gap: 1.875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .services__container {
-    grid-template-columns: 310px;
-    justify-content: center;
-    row-gap: 1.875rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .services__container {
-    grid-template-columns: 1fr;
-  }
-}

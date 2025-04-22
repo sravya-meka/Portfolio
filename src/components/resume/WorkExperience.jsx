@@ -1,66 +1,48 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Software Engineer",
-        company: "Kurtosys",
-        yearsActive: "January 2022 - Present",
+        title: "Data Engineer",
+        company: "ExcelSoft",
+        yearsActive: "Nov 2024 – Present",
         information: [
-            "Write modern, performant, maintainable code for a diverse array of internal projects",
-            "Communicate with multi-disciplinary teams of engineers, team leads, and QA Engineers on a daily basis",
-        ],
+            "Engineered cloud-based ETL pipelines using Python, AWS Glue, and Redshift to automate ingestion and transformation of 500K+ daily sales and inventory records, enabling timely insights for business operations.",
+            "Built scalable data infrastructure by structuring Snowflake schema models and organizing S3 zones, enhancing query performance by 12% and enabling faster access to analytics-ready datasets.",
+            "Enhanced dimensional data models in Redshift to support scalable analytics, applying star schema design patterns and optimizing table structures for complex ad-hoc queries."
+        ]
     },
     {
         id: 2,
-        title: "Junior Software Developer",
-        company: "Entrostat",
-        yearsActive: "May 2017 - December 2021",
+        title: "Data Engineer",
+        company: "NTTData",
+        yearsActive: "Aug 2020 – Jul 2022",
         information: [
-            "Improved and optimized the company's website for a seamless customer experience",
-            "Created, communicated, and managed project plans & project timelines",
-            "Worked to continually meet the expectation of our clients",
-        ],
+            "Created Azure Data Factory pipelines to ingest data from on-prem Oracle, PostgreSQL, and flat files into Azure Synapse Analytics and SQL Database, reducing ingestion time by 5%.",
+            "Constructed scalable ETL processes to manage 200K+ daily financial records across Azure Data Lake, Synapse, and SQL Database, streamlining batch processing and ensuring end-to-end data integrity across analytical layers.",
+            "Integrated Apache Kafka pipelines to support real-time and micro-batch ingestion of transactional data into Azure Data Lake, enhancing fraud detection capabilities and reducing latency in downstream analysis."
+        ]
     },
     {
         id: 3,
-        title: "Junior Software Developer",
-        company: "Empire State",
-        yearsActive: "Feburary 2016 - April 2017",
+        title: "Data Engineer",
+        company: "NTTData",
+        yearsActive: "Nov 2019 – Jul 2020",
         information: [
-            "Planned, developed, tested, deployed, and maintained web applications and mobile applications",
-            "Worked well independently and on a team to solve problems."
-        ],
+            "Contributed to large-scale data migration of 500K+ records from Oracle and SQL Server to Teradata, applying partitioning and indexing strategies to improve risk analytics query performance by 8%.",
+            "Managed network element manager tasks utilizing Hadoop, HDFS, Hive, HBase, Zookeeper, Kafka, Apache Spark, and MapReduce, using Shell Scripting and Python Libraries.",
+            "Demonstrated anomaly detection logics using PySpark and Pandas to identify 5–10% of inconsistent records early in the pipeline, boosting data reliability and reducing manual cleansing."
+        ]
     },
     {
         id: 4,
-        title: "Software Development Intern",
-        company: "The Digital Academy",
-        yearsActive: "Novembe 2015 - January 2016",
+        title: "M.S. in Computer Science",
+        company: "Campbellsville University, KY",
+        yearsActive: "Aug 2022 – May 2024",
+        type: "education",
         information: [
-            "Served as a dedicated and supportive Intern in a fast-paced environment",
-            "Worked to solve complex problems using the latest in Mobile and Web Technologies.",
-        ],
-    },
-    {
-        id: 5,
-        title: "IT Support Assistant",
-        company: "Varsity College",
-        yearsActive: "February 2015 - May 2015",
-        information: [
-            "Worked to support the senior support staff with day-to-day tasks.",
-            "Assisted with the evaluation and troubleshooting of hardware and software issues.",
-            "Maintaining computer Inventory & surplus equipment."
-        ],
-    },
-    {
-        id: 6,
-        title: "Student Ambassador",
-        company: "Varsity College",
-        yearsActive: "December 2014 - February 2015",
-        information: [
-            "Monitored registration for all prospective student",
-            "Assisted parents and prospective student with necessary registration details",
-        ],
-    },
+            "Focused on data engineering, big data, and cloud platforms.",
+            "Completed projects using Spark, cloud services, Python, and Power BI."
+        ]
+    }
 ];
 
 export default WorkExperience;

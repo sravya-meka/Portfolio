@@ -1,30 +1,38 @@
 import React from 'react';
 import './Services.css';
-import Image1 from '../../assets/service-1.svg'
-import Image2 from '../../assets/service-2.svg'
-import Image3 from '../../assets/service-3.svg'
+import Image1 from '../../assets/service-1.svg'; // ETL - Data Pipeline
+import Image2 from '../../assets/service-2.svg'; // Cloud
+import Image3 from '../../assets/service-3.svg'; // Real-time
+import Image4 from '../../assets/service-4.svg'; // Dashboard
 
 const data = [
     {
         id: 1,
         image: Image1,
-        title: "Responsive design",
+        title: "Data Pipeline Development",
         description:
-            "Ensuring that the website/mobile app is responsive across all platforms",
+            "Build scalable ETL pipelines using PySpark, Airflow, and Glue to transform raw data into analytics-ready datasets.",
     },
     {
         id: 2,
         image: Image2,
-        title: "Web Development",
+        title: "Cloud Data Engineering",
         description:
-            "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
+            "Architect cloud-native data platforms using AWS, Redshift, S3, and Synapse for secure, scalable infrastructure.",
     },
     {
         id: 3,
         image: Image3,
-        title: "Mobile Development",
+        title: "Real-Time Data Streaming",
         description:
-            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
+            "Implement streaming pipelines with Kafka and Spark for high-throughput transactional data processing.",
+    },
+    {
+        id: 4,
+        image: Image4,
+        title: "Dashboard & Reporting",
+        description:
+            "Deliver insights using Power BI and Tableau dashboards to support faster decision-making across teams.",
     },
 ];
 
@@ -34,19 +42,16 @@ const Services = () => {
             <h2 className="section__title">Services</h2>
 
             <div className="services__container grid">
-                {data.map(({ id, image, title, description }) => {
-                    return (
-                        <div className="services__card" key={id}>
-                            <img src={image} alt='' className='services__img' width="80" />
-
-                            <h3 className="services__title">{title}</h3>
-                            <p className="services__description">{description}</p>
-                        </div>
-                    )
-                })}
+                {data.map(({ id, image, title, description }) => (
+                    <div className="services__card" key={id}>
+                        <img src={image} alt={title} className="services__img" />
+                        <h3 className="services__title">{title}</h3>
+                        <p className="services__description">{description}</p>
+                    </div>
+                ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

@@ -20,33 +20,34 @@ const Resume = () => {
                     selectedTabClassName={"is-active"}
                     selectedTabPanelClassName={"is-active"}
                 >
+                    {/* Tab Buttons */}
                     <TabList className="tab__list">
-                        {WorkExperience.map((experience, index) => {
-                            const { id, company } = experience;
+                        {WorkExperience.map((experience) => {
+                            const isEducation = experience.type === "education";
                             return (
-                                <Tab className="tab" key={`company-${id}`}>
-                                    <Button>{company}</Button>
+                                <Tab className="tab" key={`tab-${experience.id}`}>
+                                    <Button>
+                                        {isEducation ? "EDUCATION" : experience.company}
+                                    </Button>
                                 </Tab>
                             );
                         })}
                     </TabList>
 
-                    {WorkExperience.map((experience) => {
-                        const { id, company, yearsActive, title, information } = experience;
-                        return (
-                            <TabPanel className="tab__panel" key={`panel-${id}`}>
-                                <h2 className="tab__panel-title">
-                                    {title} @ {company}
-                                </h2>
-                                <p className="tab__panel-subtitle">{yearsActive}</p>
-                                <ul className="tab__panel-list">
-                                    {information.map((info, index) => {
-                                        return <li key={`info-${index}`}>{info}</li>;
-                                    })}
-                                </ul>
-                            </TabPanel>
-                        );
-                    })}
+                    {/* Tab Content Panels */}
+                    {WorkExperience.map(({ id, title, company, yearsActive, information, type }) => (
+                        <TabPanel className="tab__panel" key={`panel-${id}`}>
+                            <h2 className="tab__panel-title">
+                                {title} @ {company}
+                            </h2>
+                            <p className="tab__panel-subtitle">{yearsActive}</p>
+                            <ul className="tab__panel-list">
+                                {information.map((info, index) => (
+                                    <li key={`info-${index}`}>{info}</li>
+                                ))}
+                            </ul>
+                        </TabPanel>
+                    ))}
                 </Tabs>
             </div>
         </section>
