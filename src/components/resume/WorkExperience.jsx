@@ -5,9 +5,9 @@ const WorkExperience = [
         company: "ExcelSoft",
         yearsActive: "Nov 2024 – Present",
         information: [
-            "Engineered cloud-based ETL pipelines using Python, AWS Glue, and Redshift to automate ingestion and transformation of 500K+ daily sales and inventory records, enabling timely insights for business operations.",
-            "Built scalable data infrastructure by structuring Snowflake schema models and organizing S3 zones, enhancing query performance by 12% and enabling faster access to analytics-ready datasets.",
-            "Enhanced dimensional data models in Redshift to support scalable analytics, applying star schema design patterns and optimizing table structures for complex ad-hoc queries."
+            "Built an end-to-end data pipeline using Airflow, Python, and S3 for retail sales analytics, leveraging AWS and Snowflake,in close partnership with analysts and BI teams, resulting in a 10% reduction in reporting latency and improved data accessibility.",
+            "Performed ingestion and data transformations on retail sales and customer data using AWS Glue and PySpark, developing fact and dimension database models in Snowflake to support analytics use cases and improve pipeline efficiency by 15%.",
+            "Developed automated workflows to apply data quality checks on sales datasets, ensuring data integrity using procedures and triggers, enabling accurate stock forecasting, helped to reduce overstock costs by 8% quarter-over-quarter."
         ]
     },
     {
@@ -16,20 +16,22 @@ const WorkExperience = [
         company: "NTTData",
         yearsActive: "Aug 2020 – Jul 2022",
         information: [
-            "Created Azure Data Factory pipelines to ingest data from on-prem Oracle, PostgreSQL, and flat files into Azure Synapse Analytics and SQL Database, reducing ingestion time by 5%.",
-            "Constructed scalable ETL processes to manage 200K+ daily financial records across Azure Data Lake, Synapse, and SQL Database, streamlining batch processing and ensuring end-to-end data integrity across analytical layers.",
-            "Integrated Apache Kafka pipelines to support real-time and micro-batch ingestion of transactional data into Azure Data Lake, enhancing fraud detection capabilities and reducing latency in downstream analysis."
+            "Architected a data lakehouse using Delta Lake on Azure to consolidate historical and streaming data, enabling unified access to raw and curated datasets, which reduced data duplication and lowered storage costs by 12%.",
+            "Implemented data processing scripts using Python and SQL to transform and validate policies and claims data, integrating with Azure data marts to streamline reporting workflows and cut data preparation time by 14%.",
+            "Configured data governance and data security rules using dbt on Azure Databricks, centralizing model access and maintaining consistency financial KPI definitions across finance teams."
+
         ]
     },
     {
         id: 3,
         title: "Data Engineer",
         company: "NTTData",
-        yearsActive: "Nov 2019 – Jul 2020",
+        yearsActive: "Aug 2019 – Jul 2020",
         information: [
-            "Contributed to large-scale data migration of 500K+ records from Oracle and SQL Server to Teradata, applying partitioning and indexing strategies to improve risk analytics query performance by 8%.",
-            "Managed network element manager tasks utilizing Hadoop, HDFS, Hive, HBase, Zookeeper, Kafka, Apache Spark, and MapReduce, using Shell Scripting and Python Libraries.",
-            "Demonstrated anomaly detection logics using PySpark and Pandas to identify 5–10% of inconsistent records early in the pipeline, boosting data reliability and reducing manual cleansing."
+            "Orchestrated ETL data pipelines using APIs, flat files, and streaming banking data to support both real-time and batch workflows, which improved loan processing efficiency, met service level agreements, and shortened reporting delays by 20%.",
+            "Optimized slow-running Spark SQL queries by collaborating with the data team to clean up logic and reduce complexity, which enhanced query performance by 12% and improved the consistency of daily banking reports.",
+            "Designed interactive dashboards in Power BI to monitor credit risk indicators and transaction anomalies in real time, improving data visibility for fraud, compliance, and operations teams across banking units"
+            
         ]
     },
     {
